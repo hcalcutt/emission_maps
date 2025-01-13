@@ -1,0 +1,75 @@
+# config.json
+{
+    "molecule_settings": {
+        "molecule": "",
+        "linefile": true,
+        "a_thres": 0.0,
+        "eu_low": 0.0,
+        "eu_upp": 0.0
+    },
+    "graph_settings": {
+        "typesetting": {
+            "font_name": "",
+            "font_name_bold": "",
+            "label_fontsize_map": 24,
+            "label_fontsize_spectra": 24
+        },
+        "boolean": {
+            "chanmap_bool": true,
+            "mom1_bool": false,
+            "spectra_bool": true,
+            "spec_mapcomb_bool": false,
+            "vine_bool": false,
+            "fitgauss_bool": false,
+            "modelA_bool": false,
+            "modelB_bool": false,
+            "paper_fig_bool": false
+        },
+        "specgra_set": {
+            "yaxis_lowerlimit": 0.0,
+            "yaxis_upperlimit": 1.0,
+            "xaxis_lowerlimit": 0.0,
+            "xaxis_upperlimit": 1.0,
+            "bandwidth": 0.5,
+            "model_linecolour": "red",
+            "spectra_linecolour": "blue",
+            "offset": 0.1,
+            "linewidth_spec": 1.0,
+            "spec_xlabel": "Frequency (GHz)",
+            "spec_ylabel": "Intensity (Jy/beam)"
+        },
+        "chanmap_set": {
+            "lower_range_chan": 0,
+            "upper_range_chan": 100,
+            "map_xlimu": 5.0,
+            "map_xliml": -5.0,
+            "map_ylimu": 5.0,
+            "map_yliml": -5.0,
+            "linewidth_map": 1.0
+        }
+    },
+    "data_settings": {
+        "paths": {
+            "plot_dir": "./plots/",
+            "cube_dir": "./cubes/",
+            "spec_model_dir": "./models/",
+            "spectra_dir": "./spectra/",
+            "data_dir": "./data/",
+            "contin_file": "",
+            "velkey_dir": "./velocity_keys/",
+            "blankmodel": ""
+        },
+        "datapara": {
+            "velkey": [],
+            "bands": [],
+            "spectra": [],
+            "all_pixels_boolean": true,
+            "spectra_names": [],
+            "model_names": [],
+            "spectra_annotations": [],
+            "header_bool": true,
+            "extra_text": "",
+            "spec_res": 0.0
+        }
+    }
+}

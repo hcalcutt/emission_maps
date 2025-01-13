@@ -1,0 +1,118 @@
+{
+    "molecule_settings": {
+        "molecule": "ch3cch",
+        "linefile": "",
+        "a_thres": 0,
+        "eu_low": 0,
+        "eu_upp": 1500,
+        
+    },
+    "paths": {
+        "plot_dir": "./plot_dir",
+        "cube_dir": "./cube_dir",
+        "spec_model_dir": "./models/",
+        "velkey_dir": "./velkey_dir/",
+        "spectra_dir": "./spectra_dir",
+        "linessample": "./linesamples",
+        "lines": "./linefiles/",
+        "data_dir": "./data/",
+        "contin_file": "./data/iras16293_cont7.fits",
+        "datatxt": "./data/cassis_newv1-2174,80_addcont0.txt",
+        "datatxt3": "./data/48_46.csv",
+        "swkey": "./data/swkey.txt",
+        "blankmodel": "./fusfiles/blank.fus"
+    },
+    "data_parameters": {
+        "bands": ["Band3", "v1-21"],
+        "spectra": [
+            "./data/band3+band7_offset_28,16(78,76)_(118,114).csv",
+            "./data/band3+band7_offset_26,28_(74,80).csv"
+        ],
+        "velkey": [
+            "ch3oh102.658046velkey.txt",
+            "ch3oh337.519067velkey.csv"
+        ],
+        "all_pixels_boolean": false,
+        "model_names": ["sourceB.txt", "sourceA.txt"],
+        "spectra_names": [
+            "band3+band7_offset_28,16(78,76)_(118,114).csv",
+            "band3+band7_offset_26,28_(74,80).csv"
+        ],
+        "spectra_annotations": ["B", "A"],
+        "header_settings": {
+            "use_header": true,
+            "manual_settings": {
+                "phasecentre": ["19h37m00.894s", "07d34m09.590s"],
+                "hpbw": 1.025,
+                "las": 5.43,
+                "nc": 1915
+            }
+        },
+        "spec_res": [0.244, 0.12207],
+        "spec_res_units": "MHz",
+        "extra_text": "pixel 74,80 around source A and 118, 114 around source B, i.e. the 1 beam offset from the peak position of B."
+    },
+    "graph_settings": {
+        "boolean_flags": {
+            "chanmap_bool": true,
+            "mom1_bool": false,
+            "spectra_bool": true,
+            "spec_mapcomb_bool": true,
+            "vine_bool": true,
+            "fitgauss_bool": false,
+            "modelA_bool": true,
+            "modelB_bool": true,
+            "paper_fig_bool": false
+        },
+        "spectra_settings": {
+            "y_axis": {
+                "min": -2,
+                "max": 70
+            },
+            "x_axis": {
+                "min": 0,
+                "max": 0
+            },
+            "offset": 35,
+            "linewidth": 2,
+            "bandwidth": 0.021,
+            "bandwidth_units": "GHz",
+            "colors": {
+                "model": "#482eff",
+                "spectra": "black"
+            },
+            "labels": {
+                "x": "Frequency (GHz)",
+                "y": "Brightness Temperature (K)"
+            }
+        },
+        "channel_map": {
+            "channel_range": {
+                "lower": [8, 10],
+                "upper": [8, 10]
+            },
+            "axes_limits": {
+                "x": {
+                    "min": -4,
+                    "max": 4
+                },
+                "y": {
+                    "min": -4,
+                    "max": 4
+                }
+            },
+            "linewidth": 2,
+            "contour_levels": "10percent"
+        },
+        "typography": {
+            "font_sizes": {
+                "map_labels": 44,
+                "spectra_labels": 30
+            },
+            "fonts": {
+                "regular": "/Volumes/Macintosh HD/System/Library/Fonts/Avenir.ttc",
+                "bold": "/Volumes/Macintosh HD/System/Library/Fonts/Avenir Next.ttc"
+            }
+        }
+    }
+}
